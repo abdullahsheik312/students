@@ -1,0 +1,175 @@
+<!--A Design by W3layouts 
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Profile| VIEW::</title>
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+
+<script src="js/jquery.min.js"></script>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+	
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Student Profile/>
+
+<script src="js/simpleCart.min.js"> </script>
+
+<link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/memenu.js"></script>
+<script>$(document).ready(function(){$(".memenu").memenu();});</script>	
+
+</head>
+<script>
+function valid(mail) {
+var mail;
+var organization = '{"members":[' +
+'{"name":"Ranjith","rno":"14mx32","sex":"Male","dob":"12/06/1993","place":"Tirpur","phone":"9876343336","email":"rangithselvaraj@gmail.com","fname":"selvaraj","lan":"Tamil,English","qua":"MBA","img":"images/img-3.jpg"},' +
+'{"name":"Subash","rno":"14mx42","sex":"Male","dob":"04/08/1994","place":"Madurai","phone":"7654567432","email":"subi@gmail.com","fname":"manitha","lan":"Tamil,English","qua":"MSC","img":"images/img-4.jpg"},' +
+'{"name":"Siva","rno":"14mx31","sex":"Male","dob":"08/10/1994","place":"Coimbatore","phone":"93649587","email":"sivsiva@gmail.com","fname":"pandiyan","lan":"Tamil,English,Malayalam","qua":"MCA","img":"images/img-2.jpg"}, '+
+'{"name":"Sheik Abdullah","rno":"14mx81","sex":"Male","dob":"03/12/1994","place":"Coimbatore","phone":"8711199901","email":"sheik@gmail.com","fname":"farook","lan":"Tamil,English,Malayalam","qua":"MCA","img":"images/img-1.jpg"}]}';
+obj = JSON.parse(organization); 
+if(mail!=""){
+  var i;
+       for(i=0;i<obj.members.length;i++)
+       {	
+         if(obj.members[i].email == mail)
+        {
+         var nam=obj.members[i].name;
+         var rn=obj.members[i].rno;
+         var se=obj.members[i].sex;
+         var db=obj.members[i].dob;
+         var fnam=obj.members[i].fname;
+         var plac=obj.members[i].place;
+         var phon=obj.members[i].phone;
+         var qu=obj.members[i].qua;
+         var la=obj.members[i].lan;
+          var im=obj.members[i].img;
+       document.write("<link href='css/styles.css' rel='stylesheet' type='text/css'>");
+	   
+       document.write("<link rel='stylesheet' href='css/styles.css' type='text/css' media='all'>");
+
+       document.write("<link rel='stylesheet' href='css/t.css' type='text/css' media='all'>");
+       document.write("<link rel='stylesheet' href='css/th.css' type='text/css' media='all'>");
+       document.write("<div class='header-wrapper'><div class='menu'><ul><li><a href='index.html'>Home</a></li><li><a href='profile.html' class='active'>View Profile</a></li><li><a href='add.html'>Add Student</a></li><li><a href='update.html'>Update</a></li></ul></div><div class='clearing'></div><div class='logo-search-wrapper'><div class='logo-search-container'><div class='logo'> Student Profile </div></div></div></div>");
+       document.write("");
+       document.write("<form><div class='contact-form margin-top'><img src='"+im+"' alt='image'  class='margin-right' style='width:170px;height:150px;'/><label> <span>Name</span><input type='text' class='input_text' name='name' id='name' value='"+nam+"'/></label><label> <span>Roll Number</span> <input type='text' class='input_text' name='Rno' id='name' value='"+rn+"'/> </label><label> <span>Fathername</span> <input type='text' class='input_text' name='fname' id='name' value='"+fnam+"'/></label><label><span>Sex</span></label><input type='text' class='input_text' name='fname' id='sex' value='"+se+"'/><label></label><label> <span>Email</span><input type='text' class='input_text' name='email' id='email' value='"+mail+"'/></label><label> <span>Qualification</span><input type='text' class='input_text' name='qua' id='subject' value='"+qu+"'/></label><label><span>Phone</span><input type='text' class='input_text' name='phn' id='subject' value='"+phon+"'/></label><label><span>Address</span><textarea class='message' name='feedback' id='feedback'>"+plac+"</textarea></label></div></form>"); 
+       }  
+     }
+}  
+else
+    alert("Invaid login");
+}
+
+</script>
+
+<body> 
+<!--header-->	
+<div class="top_bg">
+	<div class="container">
+		<div class="header_top-sec">
+			
+						<div class="top_left">
+				
+			</div>
+				<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<div class="header-top">
+	 <div class="header-bottom">
+		 <div class="container">			
+				<div class="logo">
+					<a href="index.html"><h1>Student Profile</h1></a>
+				</div>
+			 <!---->
+		 
+			 <div class="top-nav">
+				<ul class="memenu skyblue"><li class="grid"><a href="index.html">Home</a></li>
+					
+					<li class="grid"><a href="add.html">Add Student</a></li>
+					<li class="active"><a href="view.html">View Details</a></li>
+					<li class="grid"><a href="edit.html">Edit Details</a></li>
+					
+				</ul>
+				
+			 </div>
+			
+	
+</div>
+<!---->
+
+	 
+		 <ol class="breadcrumb">
+	
+		 
+		 </ol>
+		 <div ">	
+		
+				 <form id="contacts-form" action="#">
+         
+
+     
+	  
+      <table ><div class="margin-right"> <tr><td><h4>Name          : Sheik Abdullah</h4>
+        
+      
+	  <h4>RollNo        : 14mx81</h4>
+        <h4>Qualification : MCA</h4>
+        <h4><button type ="button"  onclick="valid('sheik@gmail.com')">View Profile</button></h4></td><td>
+		<img src="images/img-1.jpg" alt="image"   style="width:170px;height:150px;"/></tr><tr><tr><br>
+		<ol class="breadcrumb">
+	
+		 
+		 </ol>
+       
+	  
+	   <center><div>
+	  <tr><td>
+      <img src="images/img-3.jpg" alt="image"   style="width:170px;height:150px;"/>  
+</td><td>	  
+        <h4>Name          : Ranjith</h4>
+        <h4>RollNo        : 14mx32</h4>
+       <h4>Qualification : MBA</h4>
+       <h4><button type ="button"  onclick="valid('rangithselvaraj@gmail.com')">View Profile</button></h4></td></tr><tr><tr><br>
+</td></tr>
+      <div><tr><td>
+        <h4>Name          : Subash</h4>
+        <h4>RollNo        : 14mx42</h4>
+        <h4>Qualification : MSC</h4>
+       <h4><button type ="button"  onclick="valid('subi@gmail.com')">View Profile</button></h4></td><td>
+	   <img src="images/img-4.jpg" alt="image"  class="margin-left" style="width:170px;height:150px;"/></tr><tr><tr><br>
+     </div>
+      <div><tr><td> <img src="images/img-2.jpg" alt="image"  class="margin-right" style="width:170px;height:150px;"/></td><td>
+        <h4>Name          : Siva</h4>
+        <h4>RollNo        : 14mx31</h4>
+        <h4>Qualification : MA</h4>
+        <h4><button type ="button"  onclick="valid('sivsiva@gmail.com')">View Profile</button></h4><tr>
+		</table>
+      </div>
+    </div>
+				 </div>
+					
+		 </div>	
+				
+		 
+	 </div>
+</div>
+</center>
+<!---->
+
+<!---->
+ <div class="copywrite">
+	 <div class="container">
+			 <p>Copyright © PSG College of Technology.</p>
+		 </div>
+</div>		 
+</body>
+</html>
